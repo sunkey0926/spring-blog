@@ -11,8 +11,7 @@ let index = {
             password: $("#password").val(),
             email: $("#email").val()
         };
-        // console.log(data);
-        // 통신을 통해서, 3개의 데이터를 json 으로 변경
+        
         $.ajax({
             type: "post",
             url: "/auth/joinProc",
